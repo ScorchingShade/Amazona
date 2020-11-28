@@ -72,5 +72,15 @@ The E-commerce mega project
 - Create ./frontend/.env
 - Add SKIP_PREFLIGHT_CHECK=true
 
-
+### Add Redux to Home Screen
+- npm install redux react-redux
+- Create store.js
+- initState={products:[]}
+- reducer = {state,action}=> switch LOAD_PRODUCTS:{products:action.payload}
+- export default createStore(reducer, initState)
+- Edit HomeScreen.js
+- shopName = useSelector(state=>state.products)
+- const dispatch =useDispatch()
+- useEffect(()=>dispatch({type:LOAD_PRODUCTS,payload:data}))
+- add store to index.js
 <hr>
