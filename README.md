@@ -93,4 +93,10 @@ The E-commerce mega project
 ### Handle Add to Cart Button
 - Handle Add to cart in ProductScreen.js
 - Create CartScreen.js
+
+### Implement Add to Cart Action
+- create addToCart constants, actions and reducers
+- add reducer to store.js
+- use action in CartScreen.js
+- render cartItems.length
 <hr>
