@@ -89,4 +89,8 @@ The E-commerce mega project
 - add reducer to store.js
 - use action in ProductScreen.js
 - add /api/v1/product/:id to backend api
+
+### Handle Add to Cart Button
+- Handle Add to cart in ProductScreen.js
+- Create CartScreen.js
 <hr>
