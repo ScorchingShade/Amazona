@@ -83,4 +83,10 @@ The E-commerce mega project
 - const dispatch =useDispatch()
 - useEffect(()=>dispatch({type:LOAD_PRODUCTS,payload:data}))
 - add store to index.js
+
+### Add Redux to Product Screen
+- create product detail constants, actions and reducers
+- add reducer to store.js
+- use action in ProductScreen.js
+- add /api/v1/product/:id to backend api
 <hr>
