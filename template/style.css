@@ -124,3 +124,15 @@ img.medium {
     color: #f0c040;
     margin: 0.1rem;
 }
+
+
+/* Alert */
+
+.success {
+    color: #20a020;
+    background-color: #20a020;
+}
+
+.error {
+    color: #a02020;
+}
