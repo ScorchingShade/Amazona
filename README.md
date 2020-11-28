@@ -53,4 +53,17 @@ The E-commerce mega project
 - return products
 - run npm start
 
+### Load products from Backend
+- edit HomeScreen.js
+- define products, loading and error.
+- create useEffect
+- define async fetchData and call it
+- install axios
+- get data from /api/products
+- show them in the list
+- create loading component
+- create Message Box Component
+- Use them in HomeScreen
+
+
 <hr>

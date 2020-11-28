@@ -1,0 +1,36 @@
+{
+    "name": "e-comm-app",
+    "type": "module",
+    "version": "1.0.0",
+    "description": "an E-commerce app with admin analytics",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ScorchingShade/Amazona.git"
+    },
+    "keywords": [
+        "ecommerce",
+        "app",
+        "react",
+        "nodejs",
+        "admin",
+        "analytics"
+    ],
+    "author": "Ankush",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ScorchingShade/Amazona/issues"
+    },
+    "homepage": "https://github.com/ScorchingShade/Amazona#readme",
+    "dependencies": {
+        "express": "^4.17.1",
+        "ts-node": "^9.0.0",
+        "typescript": "^4.1.2"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.6"
+    }
+}
