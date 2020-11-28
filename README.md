@@ -65,5 +65,12 @@ The E-commerce mega project
 - create Message Box Component
 - Use them in HomeScreen
 
+### Install ESlint For Code linting
+- install VSCode eslint extension
+- npm install -D eslint
+- run ./node_modules/.bin/eslint --init
+- Create ./frontend/.env
+- Add SKIP_PREFLIGHT_CHECK=true
+
 
 <hr>
