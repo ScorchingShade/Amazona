@@ -10,13 +10,18 @@ import "./screenStyles.css";
 function ProductScreen(props) {
   const dispatch = useDispatch();
   const productId = props.match.params.id;
-  const [qty, setQty] = useState(1)
+  const [qty, setQty] = useState(1);
   const productDetails = useSelector((state) => state.productDetails);
   const { loading, error, product } = productDetails;
 
   useEffect(() => {
     dispatch(detailsProduct(productId));
   }, [dispatch, productId]);
+
+
+  const addToCartHandler=()=>{
+      props.history.push(`/cart/${productId}?qty=${qty}`)
+  }
 
   return (
     <div>
@@ -79,13 +84,13 @@ function ProductScreen(props) {
                           <div>
                             <select
                               value={qty}
-                              onChange={(e) =>
-                                setQty(e.target.value)
-                              }
+                              onChange={(e) => setQty(e.target.value)}
                             >
                               {[...Array(product.countInStock).keys()].map(
                                 (x) => (
-                                  <option key={x+1} value={x + 1}>{x + 1}</option>
+                                  <option key={x + 1} value={x + 1}>
+                                    {x + 1}
+                                  </option>
                                 )
                               )}
                             </select>
@@ -93,7 +98,12 @@ function ProductScreen(props) {
                         </div>
                       </li>
                       <li>
-                        <button className="primary block">Add to Cart</button>
+                        <button
+                          onClick={addToCartHandler}
+                          className="primary block"
+                        >
+                          Add to Cart
+                        </button>
                       </li>
                     </>
                   )}
