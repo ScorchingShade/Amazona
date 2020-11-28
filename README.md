@@ -29,4 +29,13 @@ The E-commerce mega project
 - style div.rating, span and last span
 - create product component
 - use rating component
+
+### Build Product Screen
+- Install react-router-dom
+- User BrowserRouter and Route for HomeScreen
+- Create HomeScreen.js
+- Add product list code there
+- Create ProductScreen.js
+- Add new Route from product details to App.js
+- create 3 columns for product image, info and action
 <hr>
