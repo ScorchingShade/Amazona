@@ -139,4 +139,10 @@ The E-commerce mega project
 - install dotenv
 - return token and data
 - test it using postman
+
+### Design SignIn Screen
+- Create SigninScreen
+- Render email and password fields
+- Create signin constants, actions and reducers
+- Update Header based on user login
 <hr>
