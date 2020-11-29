@@ -123,6 +123,18 @@ a.brand {
     font-weight: bold;
 }
 
+.badge {
+    border-radius: 50%;
+    width: 1.4rem;
+    height: 1.4rem;
+    padding: 0.2rem 0.7rem;
+    background: #f20202;
+    color: #ffffff;
+    text-align: center;
+    margin-left: 0.4rem;
+    font-size: 1.4rem;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
