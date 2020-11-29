@@ -158,6 +158,10 @@ a.brand {
     flex: 2 1 50rem;
 }
 
+.min-30 {
+    min-width: 30rem;
+}
+
 
 /*Image*/
 
@@ -166,6 +170,11 @@ img {
 }
 
 img.large {
+    width: 100%;
+}
+
+img.small {
+    max-width: 5rem;
     width: 100%;
 }
 
