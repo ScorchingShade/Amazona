@@ -16,7 +16,6 @@ const data = {
     ],
 
     products: [{
-            _id: "1",
             name: "Nike Slim Shirt",
             category: "shirts",
             image: "/images/p1.jpg",
@@ -28,7 +27,6 @@ const data = {
             description: "High quality Shirt",
         },
         {
-            _id: "2",
             name: "Puma office Shirt",
             category: "shirts",
             image: "/images/p2.jpg",
@@ -40,7 +38,6 @@ const data = {
             description: "High quality Shirt",
         },
         {
-            _id: "3",
             name: "Van Huesen Slim Shirt",
             category: "shirts",
             image: "/images/p3.jpg",
@@ -52,7 +49,6 @@ const data = {
             description: "High quality Shirt",
         },
         {
-            _id: "4",
             name: "Adidas jock Pants",
             category: "trousers",
             image: "/images/p4.jpg",
@@ -64,7 +60,6 @@ const data = {
             description: "High quality Trousers",
         },
         {
-            _id: "5",
             name: "Jumla Slim Pants",
             category: "trousers",
             image: "/images/p5.jpg",
@@ -76,7 +71,6 @@ const data = {
             description: "High quality Trousers",
         },
         {
-            _id: "6",
             name: "Arrow Slim Pants",
             category: "trousers",
             image: "/images/p6.jpg",
