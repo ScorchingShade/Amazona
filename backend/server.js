@@ -1,13 +1,17 @@
-import express from "express";
+import express, { urlencoded } from "express";
 import mongoose from 'mongoose'
 import userRouter from "./routers/userRouter.js";
 import productRouter from "./routers/productRouter.js";
+import dotenv from 'dotenv'
+
 
 const app = express();
-
-//Connect to mongoDb
-const uri = process.env.ATLAS_URI;
-mongoose.connect(process.env.MONGODB_URL || `mongodb+srv://ankush:1234@cluster0-nmfdz.mongodb.net/users?retryWrites=true&w=majority`, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true })
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
+dotenv.config()
+    //Connect to mongoDb
+const uri = process.env.ATLAS_URI || "http://localhost:5000/";
+mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true })
 const connection = mongoose.connection;
 
 connection.once('open', () => {
