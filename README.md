@@ -99,4 +99,11 @@ The E-commerce mega project
 - add reducer to store.js
 - use action in CartScreen.js
 - render cartItems.length
+
+### Build Cart Screen
+- Create 2 columns for cart item and cart action
+- cartItems.length === 0 ? cart is empty
+- show item, image, qty and price
+- Proceed to checkout button
+- Implement remove from cart action
 <hr>
