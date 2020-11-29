@@ -106,4 +106,9 @@ The E-commerce mega project
 - show item, image, qty and price
 - Proceed to checkout button
 - Implement remove from cart action
+
+### Implement Remove from Cart Action
+- create removeFromCart constants, actions and reducers
+- add reducer to store.js
+- use action in CartScreen.js
 <hr>
