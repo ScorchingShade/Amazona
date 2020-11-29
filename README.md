@@ -130,4 +130,13 @@ The E-commerce mega project
 - create productSchema and productModel
 - create productRoute
 - seed sample data
+
+### Create Sign-in Backend
+- Create /signin api 
+- check email and password
+- generate jwt token
+- install json web token
+- install dotenv
+- return token and data
+- test it using postman
 <hr>
