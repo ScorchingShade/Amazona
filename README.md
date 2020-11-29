@@ -111,4 +111,17 @@ The E-commerce mega project
 - create removeFromCart constants, actions and reducers
 - add reducer to store.js
 - use action in CartScreen.js
+
+### Connect to MongoDB
+- npm install mongoose
+- connect to mongodb
+- create config.js
+- npm install dotenv
+- export MONGODB_URL
+- create models/userModel.js
+- create userSchema and userModel
+- create models/productModel.js
+- create productSchema and productModel
+- create userRoute
+- Seed sample data
 <hr>
