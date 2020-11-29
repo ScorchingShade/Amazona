@@ -145,4 +145,10 @@ The E-commerce mega project
 - Render email and password fields
 - Create signin constants, actions and reducers
 - Update Header based on user login
+
+### Implement SignIn Action
+- Create SignIn constants, actions and reducers
+- add reducer to store.js
+- use action in SigninScreen.js
+
 <hr>
