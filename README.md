@@ -124,4 +124,10 @@ The E-commerce mega project
 - create productSchema and productModel
 - create userRoute
 - Seed sample data
+
+### Create Sample Products in MongoDB
+- create models/productModel.js
+- create productSchema and productModel
+- create productRoute
+- seed sample data
 <hr>
