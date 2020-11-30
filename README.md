@@ -151,4 +151,12 @@ The E-commerce mega project
 - add reducer to store.js
 - use action in SigninScreen.js
 
+### Create Register Screen and Backend API
+- Create API for /api/v1/users/register
+- insert new user to database
+- return usern info and token
+- create RegisterScreen
+- Add fields
+- Style fields
+- Add screen to App.js
 <hr>
