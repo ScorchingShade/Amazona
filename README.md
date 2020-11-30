@@ -159,4 +159,9 @@ The E-commerce mega project
 - Add fields
 - Style fields
 - Add screen to App.js
+
+### Create Shipping Screen
+- Create CheckoutSteps.js component
+- Create Shipping Fields
+- Implement Shipping Constant, actions and reducers
 <hr>
