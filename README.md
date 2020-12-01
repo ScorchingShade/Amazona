@@ -164,4 +164,8 @@ The E-commerce mega project
 - Create CheckoutSteps.js component
 - Create Shipping Fields
 - Implement Shipping Constant, actions and reducers
+
+### Create Payment Screen
+- Create Payment Fields
+- Implement Shipping Constant, actions and reducers
 <hr>
