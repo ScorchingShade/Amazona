@@ -168,4 +168,8 @@ The E-commerce mega project
 ### Create Payment Screen
 - Create Payment Fields
 - Implement Shipping Constant, actions and reducers
+
+### Design Place Order Screen
+- Design order summary fields
+- Design order action
 <hr>
