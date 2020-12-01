@@ -21,3 +21,7 @@
     color: #a02020;
     background-color: #ffe0e0e0;
 }
+
+.form label {
+    margin: 1rem 0;
+}
