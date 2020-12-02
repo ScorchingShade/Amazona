@@ -173,7 +173,7 @@ The E-commerce mega project
 - Design order summary fields
 - Design order action
 
-### Create Place Order API
+### Create backend Place Order API
 - createOrder API
 - create orderModel
 - create orderRouter
