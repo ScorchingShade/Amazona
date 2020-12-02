@@ -172,4 +172,10 @@ The E-commerce mega project
 ### Design Place Order Screen
 - Design order summary fields
 - Design order action
+
+### Create Place Order API
+- createOrder API
+- create orderModel
+- create orderRouter
+- create post order route
 <hr>
