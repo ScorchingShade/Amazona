@@ -79,7 +79,7 @@ function App() {
           <Route path="/" component={HomeScreen} exact></Route>
         </main>
         <footer className="row center">
-          A production by Ankush Sharm @ ScorchingShade
+          A production by Ankush Sharma @ ScorchingShade
         </footer>
       </div>
     </BrowserRouter>
