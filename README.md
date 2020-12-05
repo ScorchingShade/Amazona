@@ -204,4 +204,11 @@ The E-commerce mega project, to be completed soon
 - create payorder in api.js
 - create route for /:id/pay in orderRouter.js
 - rerender after pay order
+
+### Display Orders History
+- create customer orders api
+- create api for getMyOrder
+- show orders in profile screen
+- style orders
+
 <hr>
