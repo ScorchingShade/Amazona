@@ -22,6 +22,11 @@
     background-color: #ffe0e0e0;
 }
 
+.alert-success {
+    color: #20a020;
+    background-color: #eeffe0;
+}
+
 .form label {
     margin: 1rem 0;
 }
