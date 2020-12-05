@@ -198,4 +198,10 @@ The E-commerce mega project, to be completed soon
 - create getPaypalClientID in OrderScreen.js
 - add paypal checkout script in OrderScreen.js
 - show paypal button
+
+### Implement Order Payment
+- update order after payment
+- create payorder in api.js
+- create route for /:id/pay in orderRouter.js
+- rerender after pay order
 <hr>
