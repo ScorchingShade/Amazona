@@ -215,4 +215,8 @@ The E-commerce mega project, to be completed soon
 - Create user details api
 - show user information
 
+### Update User Profile
+- Create user update api
+- update user info
+
 <hr>
