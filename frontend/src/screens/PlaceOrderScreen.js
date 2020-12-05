@@ -1,6 +1,7 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { createOrder } from "../actions/orderActions";
 import CheckoutSteps from "../components/CheckoutSteps";
 
 function PlaceOrderScreen(props) {
@@ -18,8 +19,9 @@ function PlaceOrderScreen(props) {
   cart.taxPrice = toPrice(0.015 * cart.itemsPrice);
   cart.totalPrice = cart.itemsPrice + cart.shippingPrice + cart.taxPrice;
 
+  const dispatch = useDispatch();
   const placeOrderHandler=()=>{
-
+    dispatch(createOrder({...cart,orderItems:cart.cartItems}))
   }
   return (
     <div>
