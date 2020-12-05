@@ -182,4 +182,12 @@ The E-commerce mega project, to be completed soon
 ### Implement PlaceOrder Action
 - Handle place order button click
 - create place order constants, action and reducer
+
+### Create Order Screen
+- Build Order API for /api/v1/orders/:id
+- create OrderScreen.js
+- dispatch order details action in useEffect
+- load data with useSelector
+- show data like place order screen
+- create order details constant, action and reducer
 <hr>
