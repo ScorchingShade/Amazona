@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { createOrder } from "../actions/orderActions";
 import CheckoutSteps from "../components/CheckoutSteps";
+import { ORDER_CREATE_RESET } from "../constants/orderConstants";
+import LoadingBox from "../components/LoadingBox";
+import MessageBox from "../components/MessageBox";
 
 function PlaceOrderScreen(props) {
   const cart = useSelector((state) => state.cart);
   if (!cart.paymentMethod) {
     props.history.push("/payment");
   }
+
+  const orderCreate = useSelector((state) => state.orderCreate);
+  const { loading, success, error, order } = orderCreate;
 
   const toPrice = (num) => Number(num.toFixed(2)); // e.g 5.123 => "5.12" => 5.12
   cart.itemsPrice = toPrice(
@@ -20,9 +26,16 @@ function PlaceOrderScreen(props) {
   cart.totalPrice = cart.itemsPrice + cart.shippingPrice + cart.taxPrice;
 
   const dispatch = useDispatch();
-  const placeOrderHandler=()=>{
-    dispatch(createOrder({...cart,orderItems:cart.cartItems}))
-  }
+  const placeOrderHandler = () => {
+    dispatch(createOrder({ ...cart, orderItems: cart.cartItems }));
+  };
+
+  useEffect(() => {
+    if (success) {
+      props.history.push(`/order/${order._id}`);
+      dispatch({ type: ORDER_CREATE_RESET });
+    }
+  }, [dispatch, order, props.history, success]);
   return (
     <div>
       <CheckoutSteps step1 step2 step3 step4></CheckoutSteps>
@@ -122,11 +135,14 @@ function PlaceOrderScreen(props) {
                   type="button"
                   onClick={placeOrderHandler}
                   className="primary block"
-                  disabled={cart.cartItems.length===0}
+                  disabled={cart.cartItems.length === 0}
                 >
                   Place Order
                 </button>
               </li>
+
+              {loading && <LoadingBox></LoadingBox>}
+              {error && <MessageBox variant="danger"></MessageBox>}
             </ul>
           </div>
         </div>
