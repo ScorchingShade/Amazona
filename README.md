@@ -211,4 +211,8 @@ The E-commerce mega project, to be completed soon
 - show orders in profile screen
 - style orders
 
+### Display User Profile  
+- Create user details api
+- show user information
+
 <hr>
