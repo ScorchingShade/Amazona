@@ -178,4 +178,8 @@ The E-commerce mega project, to be completed soon
 - create orderModel
 - create orderRouter
 - create post order route
+
+### Implement PlaceOrder Action
+- Handle place order button click
+- create place order constants, action and reducer
 <hr>
