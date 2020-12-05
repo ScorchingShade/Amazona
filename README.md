@@ -190,4 +190,12 @@ The E-commerce mega project, to be completed soon
 - load data with useSelector
 - show data like place order screen
 - create order details constant, action and reducer
+
+### Add PayPal Button
+- get client id from paypal
+- set it in .env file
+- create route from /api/v1/paypal/clientId
+- create getPaypalClientID in OrderScreen.js
+- add paypal checkout script in OrderScreen.js
+- show paypal button
 <hr>
