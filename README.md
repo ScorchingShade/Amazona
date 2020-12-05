@@ -1,5 +1,5 @@
 # Amazona
-The E-commerce mega project
+The E-commerce mega project, to be completed soon
 <hr>
 
 ## Tasks
