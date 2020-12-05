@@ -28,6 +28,10 @@ app.get("/", (req, res) => {
     res.send("Server done");
 });
 
+app.get("/api/v1/config/paypal", (req, res) => {
+    res.send(process.env.PAYPAL_CLIENT_ID || "sb");
+});
+
 //Router usage
 app.use("/api/v1/users", userRouter);
 app.use("/api/v1/products", productRouter);

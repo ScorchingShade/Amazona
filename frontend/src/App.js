@@ -40,7 +40,7 @@ function App() {
                 <span className="badge">{cartItems.length}</span>
               )}
             </Link>
-            {userInfo && userInfo.data == undefined ? (
+            {userInfo && userInfo.data === undefined ? (
               <div className="dropdown">
                 <Link to="#">
                   {userInfo.name} <i className="fa fa-caret-down"></i>{" "}
