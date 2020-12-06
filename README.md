@@ -257,4 +257,10 @@ The E-commerce mega project, to be completed soon
 - create delete api in backend
 - create delete constants, action and reducer
 - use it in product list screen
+
+### List Orders
+- create order list api
+- create order list screen
+- add reducer to store
+- show products on the screen
 <hr>
