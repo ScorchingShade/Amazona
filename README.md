@@ -263,4 +263,8 @@ The E-commerce mega project, to be completed soon
 - create order list screen
 - add reducer to store
 - show products on the screen
+
+### Delete Order
+- create delete order action and reducer
+- add order delete action to order list
 <hr>
