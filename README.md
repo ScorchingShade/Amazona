@@ -252,4 +252,9 @@ The E-commerce mega project, to be completed soon
 - define upload router
 - create uploads folder
 - handle frontend
+
+### Delete Product
+- create delete api in backend
+- create delete constants, action and reducer
+- use it in product list screen
 <hr>
