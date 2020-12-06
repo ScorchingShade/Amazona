@@ -49,9 +49,9 @@ const __dirname = path.resolve();
 //Serving things from a particular folder
 app.use(express.static(path.join(__dirname, '/frontend/build')));
 app.get('*', (req, res) =>
-    res.sendFile(path.join(__dirname, '/frontend/build/index.html'))
+    res.sendFile(path.join(`${__dirname}/../frontend/build/index.html`))
 );
-app.use("/uploads", express.static(path.join(__dirname, "/uploads")));
+app.use("/uploads", express.static(`${__dirname}/../uploads`));
 app.listen(PORT, () => {
     console.log(`Served at http://localhost:${PORT}`);
 });
