@@ -271,4 +271,16 @@ The E-commerce mega project, to be completed soon
 ### Deliver Order
 - Create Constant, actions and reducers for deliver order
 - add order deliver action to order details screen
+
+### Publish to Heroku
+- Create git repository
+- Create Heroku Account
+- Install Heroku CLI
+- Heroku login
+- heroku apps:create <yourname>amazoning
+- Edit package.json for build script
+- Create Procfile
+- Create mongodb atlas db
+- set database connection in heroku env variables
+- commit and push
 <hr>
