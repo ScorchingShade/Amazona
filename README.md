@@ -246,4 +246,10 @@ The E-commerce mega project, to be completed soon
 - Define update api
 - define product update constant, action and reducer
 - use action in Product Edit Screen
+
+### Upload Product Image
+- npm install multer
+- define upload router
+- create uploads folder
+- handle frontend
 <hr>
