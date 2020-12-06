@@ -229,4 +229,10 @@ The E-commerce mega project, to be completed soon
 - Add reducer to store
 - show products on the screen
 
+### Create Product
+- Build Create Product API
+- Build Create Product Button
+- Define product create constant, action and reducer
+- use action in Product List Screen
+
 <hr>
