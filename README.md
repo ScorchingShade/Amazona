@@ -235,4 +235,10 @@ The E-commerce mega project, to be completed soon
 - Define product create constant, action and reducer
 - use action in Product List Screen
 
+### Build Product Edit Screen
+- create edit screen
+- define state
+- create fields
+- load product details
+- add to routes
 <hr>
