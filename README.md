@@ -267,4 +267,8 @@ The E-commerce mega project, to be completed soon
 ### Delete Order
 - create delete order action and reducer
 - add order delete action to order list
+
+### Deliver Order
+- Create Constant, actions and reducers for deliver order
+- add order deliver action to order details screen
 <hr>
