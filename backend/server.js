@@ -4,6 +4,8 @@ import userRouter from "./routers/userRouter.js";
 import productRouter from "./routers/productRouter.js";
 import dotenv from "dotenv";
 import orderRouter from "./routers/orderRouter.js";
+import uploadRouter from "./routers/uploadRouter.js";
+import path from 'path';
 
 const app = express();
 app.use(express.json());
@@ -33,6 +35,7 @@ app.get("/api/v1/config/paypal", (req, res) => {
 });
 
 //Router usage
+app.use("/api/v1/uploads", uploadRouter);
 app.use("/api/v1/users", userRouter);
 app.use("/api/v1/products", productRouter);
 app.use("/api/v1/orders", orderRouter);
@@ -42,6 +45,9 @@ app.use((err, req, res, next) => {
     res.status(500).send({ message: err.message });
 });
 
+const __dirname = path.resolve();
+//Serving things from a particular folder
+app.use("/uploads", express.static(path.join(__dirname, "/uploads")));
 app.listen(PORT, () => {
     console.log(`Served at http://localhost:${PORT}`);
 });
