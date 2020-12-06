@@ -219,4 +219,9 @@ The E-commerce mega project, to be completed soon
 - Create user update api
 - update user info
 
+### Create Admin View
+- Create Admin View
+- Create Admin Middleware in backend
+- Create Admin Route in Frontend
+
 <hr>
