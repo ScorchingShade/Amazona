@@ -241,4 +241,9 @@ The E-commerce mega project, to be completed soon
 - create fields
 - load product details
 - add to routes
+
+### Update Product
+- Define update api
+- define product update constant, action and reducer
+- use action in Product Edit Screen
 <hr>
