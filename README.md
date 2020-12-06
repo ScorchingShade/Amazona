@@ -247,7 +247,7 @@ The E-commerce mega project, to be completed soon
 - define product update constant, action and reducer
 - use action in Product Edit Screen
 
-### Upload Product Image
+### Upload Product Image for Admin
 - npm install multer
 - define upload router
 - create uploads folder
