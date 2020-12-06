@@ -224,4 +224,9 @@ The E-commerce mega project, to be completed soon
 - Create Admin Middleware in backend
 - Create Admin Route in Frontend
 
+### List Products
+- Create Product List Screen
+- Add reducer to store
+- show products on the screen
+
 <hr>
