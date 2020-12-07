@@ -288,4 +288,10 @@ The E-commerce mega project, to be completed soon
 - Build API for List Users
 - Create User List Screen
 - Create Order Details constant, actions and reducer
+
+### Delete Users
+- build api for delete users
+- create order details constant, action and reducer
+- use action in UserListScreen
+
 <hr>
