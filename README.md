@@ -283,4 +283,9 @@ The E-commerce mega project, to be completed soon
 - Create mongodb atlas db
 - set database connection in heroku env variables
 - commit and push
+
+### List Users
+- Build API for List Users
+- Create User List Screen
+- Create Order Details constant, actions and reducer
 <hr>
