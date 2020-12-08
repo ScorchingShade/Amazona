@@ -19,7 +19,8 @@ import RegisterScreen from "./screens/RegisterScreen";
 import ShippingAddressScreen from "./screens/ShippingAddressScreen";
 import SigninScreen from "./screens/SigninScreen";
 import UserListScreen from "./screens/UserListScreen";
-import UserEditScreen from "./screens/UserEditScreen"
+import UserEditScreen from "./screens/UserEditScreen";
+import SellerRoute from "./components/SellerRoute";
 
 function App() {
   const cart = useSelector((state) => state.cart);
@@ -39,7 +40,7 @@ function App() {
         <header className="row">
           <div>
             <Link className="brand" to="/">
-              amazoning
+              amazona
             </Link>
           </div>
           <div>
@@ -49,10 +50,10 @@ function App() {
                 <span className="badge">{cartItems.length}</span>
               )}
             </Link>
-            {userInfo && userInfo.data === undefined ? (
+            {userInfo ? (
               <div className="dropdown">
                 <Link to="#">
-                  {userInfo.name} <i className="fa fa-caret-down"></i>{" "}
+                  {userInfo.name} <i className="fa fa-caret-down"></i>{' '}
                 </Link>
                 <ul className="dropdown-content">
                   <li>
@@ -68,26 +69,28 @@ function App() {
                   </li>
                 </ul>
               </div>
-            ) : userInfo != null && userInfo.data != null ? (
+            ) : (
+              <Link to="/signin">Sign In</Link>
+            )}
+            {userInfo && userInfo.isSeller && (
               <div className="dropdown">
-                <Link to="#">
-                  {userInfo.data.name} <i className="fa fa-caret-down"></i>{" "}
+                <Link to="#admin">
+                  Seller <i className="fa fa-caret-down"></i>
                 </Link>
                 <ul className="dropdown-content">
                   <li>
-                    <Link to="#signout" onClick={signoutHandler}>
-                      Sign Out
-                    </Link>
+                    <Link to="/productlist/seller">Products</Link>
+                  </li>
+                  <li>
+                    <Link to="/orderlist/seller">Orders</Link>
                   </li>
                 </ul>
               </div>
-            ) : (
-              <Link to="/signin">SignIn</Link>
             )}
             {userInfo && userInfo.isAdmin && (
               <div className="dropdown">
                 <Link to="#admin">
-                  Admin<i className="fa fa-caret-down"></i>
+                  Admin <i className="fa fa-caret-down"></i>
                 </Link>
                 <ul className="dropdown-content">
                   <li>
@@ -117,15 +120,25 @@ function App() {
           <AdminRoute
             path="/productlist"
             component={ProductListScreen}
+            exact
           ></AdminRoute>
           <AdminRoute
             path="/orderlist"
             component={OrderListScreen}
+            exact
           ></AdminRoute>
-           <AdminRoute
+          <AdminRoute
             path="/user/:id/edit"
             component={UserEditScreen}
           ></AdminRoute>
+          <SellerRoute
+            path="/productlist/seller"
+            component={ProductListScreen}
+          ></SellerRoute>
+          <SellerRoute
+            path="/orderlist/seller"
+            component={OrderListScreen}
+          ></SellerRoute>
           <AdminRoute path="/userlist" component={UserListScreen}></AdminRoute>
           <Route path="/orderhistory" component={OrderHistoryScreen}></Route>
           <Route path="/payment" component={PaymentMethodScreen}></Route>
