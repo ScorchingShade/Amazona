@@ -298,4 +298,10 @@ The E-commerce mega project, to be completed soon
 - build api for updated user
 - create edit screen UI
 
+### Implement Seller View
+- add seller menu
+- create seller route
+- list products for seller
+- list orders for seller
+- add Seller to Product list and Details Screen
 <hr>
