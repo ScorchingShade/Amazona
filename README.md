@@ -304,4 +304,9 @@ The E-commerce mega project, to be completed soon
 - list products for seller
 - list orders for seller
 - add Seller to Product list and Details Screen
+
+### Create Seller Page
+- create seller page
+- create seller carousel
+
 <hr>
