@@ -334,5 +334,8 @@ The E-commerce mega project, to be completed soon
 - filter by rating
 - sort by rating, price, ...
 
+### Rate and Review Products
+- rate products
+- create actions and reducers
 
 <hr>
