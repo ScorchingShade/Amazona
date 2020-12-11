@@ -314,4 +314,7 @@ The E-commerce mega project, to be completed soon
 - implement actions and reducers for top sellers
 - use react carousel with data in Home Screen
 
+### Force Order from one Seller
+- update addToCart action to buy from one seller at an order
+
 <hr>
