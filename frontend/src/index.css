@@ -29,7 +29,7 @@ body {
 
 header {
     grid-area: header;
-    background-color: #203040
+    background-color: #8b3c1c
 }
 
 main {
@@ -40,7 +40,7 @@ main {
 footer {
     grid-area: footer;
     color: #ffffff;
-    background-color: #203040
+    background-color: #8b3c1c
 }
 
 
@@ -302,7 +302,7 @@ img.medium {
     min-width: 12rem;
     padding: 1rem;
     z-index: 1;
-    background-color: #203040;
+    background-color: #8b3c1c;
     margin: 0;
     margin-top: 0.4rem;
     border-radius: 0.5rem;

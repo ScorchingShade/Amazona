@@ -329,4 +329,6 @@ The E-commerce mega project, to be completed soon
 - Filter by Price Range
 - Filter by Average Rating
 
+
+
 <hr>
