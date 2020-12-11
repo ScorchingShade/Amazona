@@ -317,4 +317,11 @@ The E-commerce mega project, to be completed soon
 ### Force Order from one Seller
 - update addToCart action to buy from one seller at an order
 
+### Create Search box and Search Screen
+- Create search bar in Header.js
+- Add Style
+- Handle submit form
+- Edit parse url to get query  string
+- update product list api for search by name
+
 <hr>
