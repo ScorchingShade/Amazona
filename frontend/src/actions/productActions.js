@@ -15,21 +15,38 @@ import {
     PRODUCT_DELETE_REQUEST,
     PRODUCT_DELETE_SUCCESS,
     PRODUCT_DELETE_FAIL,
+    PRODUCT_CATEGORY_LIST_REQUEST,
+    PRODUCT_CATEGORY_LIST_SUCCESS,
+    PRODUCT_CATEGORY_LIST_FAIL,
 } from "../constants/productConstants";
 
-export const listProducts = ({ seller = '', name = '' }) => async(
-    dispatch
-) => {
+export const listProducts = ({
+    seller = '',
+    name = '',
+    category = '',
+}) => async(dispatch) => {
     dispatch({
         type: PRODUCT_LIST_REQUEST,
     });
     try {
         const { data } = await Axios.get(
-            `/api/v1/products?seller=${seller}&name=${name}`
+            `/api/v1/products?seller=${seller}&name=${name}&category=${category}`
         );
         dispatch({ type: PRODUCT_LIST_SUCCESS, payload: data });
     } catch (error) {
         dispatch({ type: PRODUCT_LIST_FAIL, payload: error.message });
+    }
+};
+
+export const listProductCategories = () => async(dispatch) => {
+    dispatch({
+        type: PRODUCT_CATEGORY_LIST_REQUEST,
+    });
+    try {
+        const { data } = await Axios.get(`/api/v1/products/categories`);
+        dispatch({ type: PRODUCT_CATEGORY_LIST_SUCCESS, payload: data });
+    } catch (error) {
+        dispatch({ type: PRODUCT_CATEGORY_LIST_FAIL, payload: error.message });
     }
 };
 
