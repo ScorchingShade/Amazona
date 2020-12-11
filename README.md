@@ -324,6 +324,9 @@ The E-commerce mega project, to be completed soon
 - Edit parse url to get query  string
 - update product list api for search by name
 
-
+### Add Advanced Search Filter
+- Filter by Category
+- Filter by Price Range
+- Filter by Average Rating
 
 <hr>
