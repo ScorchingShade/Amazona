@@ -21,6 +21,7 @@ import SigninScreen from "./screens/SigninScreen";
 import UserListScreen from "./screens/UserListScreen";
 import UserEditScreen from "./screens/UserEditScreen";
 import SellerRoute from "./components/SellerRoute";
+import SellerScreen from "./screens/SellerScreen";
 
 function App() {
   const cart = useSelector((state) => state.cart);
@@ -53,7 +54,7 @@ function App() {
             {userInfo ? (
               <div className="dropdown">
                 <Link to="#">
-                  {userInfo.name} <i className="fa fa-caret-down"></i>{' '}
+                  {userInfo.name} <i className="fa fa-caret-down"></i>{" "}
                 </Link>
                 <ul className="dropdown-content">
                   <li>
@@ -111,6 +112,7 @@ function App() {
           </div>
         </header>
         <main>
+          <Route path="/seller/:id" component={SellerScreen}></Route>
           <Route path="/placeorder" component={PlaceOrderScreen}></Route>
           <Route path="/register" component={RegisterScreen}></Route>
           <PrivateRoute
@@ -146,6 +148,7 @@ function App() {
           <Route path="/signin" component={SigninScreen}></Route>
           <Route path="/cart/:id?" component={CartScreen}></Route>
           <Route path="/product/:id" component={ProductScreen} exact></Route>
+
           <Route
             path="/product/:id/edit"
             component={ProductEditScreen}
