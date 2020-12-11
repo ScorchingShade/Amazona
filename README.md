@@ -329,4 +329,10 @@ The E-commerce mega project, to be completed soon
 - Filter by Price Range
 - Filter by Average Rating
 
+### Complete Advanced Search
+- filter by price
+- filter by rating
+- sort by rating, price, ...
+
+
 <hr>
