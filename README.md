@@ -309,4 +309,9 @@ The E-commerce mega project, to be completed soon
 - create seller page
 - create seller carousel
 
+### Add Top Seller Carousel
+- install react carousel
+- implement actions and reducers for top sellers
+- use react carousel with data in Home Screen
+
 <hr>
