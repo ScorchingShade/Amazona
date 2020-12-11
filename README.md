@@ -324,4 +324,6 @@ The E-commerce mega project, to be completed soon
 - Edit parse url to get query  string
 - update product list api for search by name
 
+
+
 <hr>
