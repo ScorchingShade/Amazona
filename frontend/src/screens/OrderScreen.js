@@ -68,7 +68,7 @@ function OrderScreen(props) {
         }
       }
     }
-  }, [dispatch, orderId, order, sdkReady, successPay,successDeliver]);
+  }, [dispatch, orderId, sdkReady, successPay,successDeliver, order]);
 
   const successPaymentHandler = (paymentResult) => {
     //Todo

@@ -283,4 +283,59 @@ The E-commerce mega project, to be completed soon
 - Create mongodb atlas db
 - set database connection in heroku env variables
 - commit and push
+
+### List Users
+- Build API for List Users
+- Create User List Screen
+- Create Order Details constant, actions and reducer
+
+### Delete Users
+- build api for delete users
+- create order details constant, action and reducer
+- use action in UserListScreen
+
+### Edit User
+- build api for updated user
+- create edit screen UI
+
+### Implement Seller View
+- add seller menu
+- create seller route
+- list products for seller
+- list orders for seller
+- add Seller to Product list and Details Screen
+
+### Create Seller Page
+- create seller page
+- create seller carousel
+
+### Add Top Seller Carousel
+- install react carousel
+- implement actions and reducers for top sellers
+- use react carousel with data in Home Screen
+
+### Force Order from one Seller
+- update addToCart action to buy from one seller at an order
+
+### Create Search box and Search Screen
+- Create search bar in Header.js
+- Add Style
+- Handle submit form
+- Edit parse url to get query  string
+- update product list api for search by name
+
+### Add Advanced Search Filter
+- Filter by Category
+- Filter by Price Range
+- Filter by Average Rating
+
+### Complete Advanced Search
+- filter by price
+- filter by rating
+- sort by rating, price, ...
+
+### Rate and Review Products
+- rate products
+- create actions and reducers
+
 <hr>

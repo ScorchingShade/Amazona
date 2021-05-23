@@ -11,7 +11,7 @@ function CartScreen(props) {
     : 1;
 
   const cart = useSelector((state) => state.cart);
-  const { cartItems } = cart;
+  const { cartItems, error } = cart;
 
   const dispatch = useDispatch();
   useEffect(() => {
@@ -21,7 +21,7 @@ function CartScreen(props) {
   }, [dispatch, productId, qty]);
 
   const removeFromCartHandler = (id) => {
-    dispatch(removeFromCart(id))
+    dispatch(removeFromCart(id));
   };
 
   const checkoutHandler = () => {
@@ -31,6 +31,7 @@ function CartScreen(props) {
   return (
     <div className="row top">
       <div className="col-2">
+        {error && <MessageBox variant="danger">{error}</MessageBox>}
         <h1>Shopping Cart</h1>
         {cartItems.length === 0 ? (
           <MessageBox>

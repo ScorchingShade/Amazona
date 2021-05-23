@@ -1,6 +1,7 @@
 import React from "react";
 
-function Rating({ rating, numReviews }) {
+function Rating(props) {
+  const { rating, numReviews, caption } = props;
   return (
     <div>
       <div className="rating">
@@ -59,7 +60,11 @@ function Rating({ rating, numReviews }) {
             }
           ></i>
         </span>
-        <span>{numReviews + " reviews"} </span>
+        {caption ? (
+        <span>{caption}</span>
+      ) : (
+        <span>{numReviews + ' reviews'}</span>
+      )}
       </div>
     </div>
   );
